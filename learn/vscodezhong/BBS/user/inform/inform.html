@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plate</title>
+    <script src="../../jqeury.js"></script>
+    <link href="../../bootstrap/bootstrap/bootstrap-3.4.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../../bootstrap/bootstrap/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="inform.js"></script>
+    <link rel="stylesheet" href="../show posts/navi.css">
+    <link rel="stylesheet" href="inform.css">
+</head>
+<body>
+    <div class="outer">
+        <div class="navi"> 
+        <ul>
+            <li><a href="../login&&home/login.html"><button id="chosed">BBS</button></a>  </li>
+            <li> </li>
+            <li></li>
+            <li></li>
+            <li><a href=""><button> <span class="glyphicon glyphicon-bell"></span><span class="font">消 息</span> </button></a>  </li>
+            <li><a href="../publish posts/pub_post.html"><button><span class="glyphicon glyphicon-edit"></span> <span class="font">创作中心</span>  </button></a>
+            </li>
+            <li>
+                    <div class="user_ph" onclick="Show()"><img src="../show posts/用户-圆 (1).png" alt="">
+                      <span>登录/注册</span>
+                   </div>
+            </li>
+        </ul>
+        </div>
+    </div>
+    </div>
+    <div class="outer2 container-fluid">
+        <div class="search">
+            <input type="text" placeholder="搜搜看你想知道的">
+            <img src="../home/搜索.png" alt="">
+        </div>
+                    <div class="span12 title">
+                         <h3 class="text-center">
+                                通知中心
+                        </h3>
+                    </div>
+
+                    <ul id="myTab" class="nav nav-tabs">
+                        <li class="active"><a href="#home" data-toggle="tab" id="comment">
+                            评论通知</a></li>
+                        <li><a href="#ios" data-toggle="tab" id="follow">新增粉丝</a></li>
+                        <li>
+                            <a href="#jmeter" data-toggle="tab" id="system">
+                                系统通知</a>
+                        </li>
+                    </ul>
+                    <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane fade in active" id="home">
+                            <div class="post_layer comment">
+                                <div class="person_post"> 
+                                    <span class="glyphicon glyphicon-info-sign"></span>
+                                    <div class="post_title">2022.03.03 <span class="glyphicon glyphicon-trash" onclick="deleteComment(this,'1','comment','1')"></span></div>
+                                    <div class="post_content"><span class="fans">用户名</span>点赞了你的帖子---帖子名称</div>
+                                </div>
+                                <div class="person_post">
+                                    <div class="post_title">2022.03.03 <span class="glyphicon glyphicon-trash"></span></div>
+                                    <div class="post_content"><span class="fans">用户名</span>点赞了你的帖子</div>
+                                </div>
+                                <div class="person_post">
+                                    <div class="post_title">2022.03.03 <span class="glyphicon glyphicon-trash"></span></div>
+                                    <div class="post_content"><span class="fans">用户名</span>点赞了你的帖子</div>
+                                </div>
+                            </div>
+                            <div class="differpage">
+                                <ul class="pagination">
+                                <li><a href="#">&laquo;</a></li>
+                                <li><a href="#" style="background-color: rgb(236, 236, 236);">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">&raquo;</a></li>    
+                                </ul>
+                         </div>
+                        </div>
+                        <div class="tab-pane fade" id="ios">
+                            <div class="post_layer follow">
+                                <div class="person_post">
+                                    <div class="post_title">2022.03.03 <span class="glyphicon glyphicon-trash"></span></div>
+                                    <div class="post_content"><span class="fans">用户名</span>关注了你，点击查看</div>
+                                </div>
+                                <div class="person_post">
+                                    <div class="post_title">2022.03.03 <span class="glyphicon glyphicon-trash"></span></div>
+                                    <div class="post_content"><span class="fans">用户名</span>点赞了你的帖子</div>
+                                </div>
+                                <div class="person_post">
+                                    <div class="post_title">2022.03.03 <span class="glyphicon glyphicon-trash"></span></div>
+                                    <div class="post_content"><span class="fans">用户名</span>点赞了你的帖子</div>
+                                </div>
+                            </div>
+                            <div class="differpage">
+                                <ul class="pagination">
+                                <li><a href="#">&laquo;</a></li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">&raquo;</a></li>    
+                                </ul>
+                         </div>
+                        </div>
+                        <div class="tab-pane fade" id="jmeter">
+                            <div class="post_layer system">
+                                <div class="person_post">
+                                    <div class="post_title">2022.03.03 <span class="glyphicon glyphicon-trash"></span></div>
+                                    <div class="post_content"><div class="fans">加入CSDN博客，让你边玩边学边赚钱！</div>
+                                    这里是无数技术人成长的家园，可以让你学习技术，可以让你分享技术，也可以让你通过技术赚钱......只要你想，一切皆有可能！要不现在就来创作一篇？现在加入博客新人群，可以在线为你指导如何玩转CSDN博客哦
+                                </div>
+                                </div>
+                                <div class="person_post">
+                                    <div class="post_title">2022.03.03 <span class="glyphicon glyphicon-trash"></span></div>
+                                    <div class="post_content"><span class="fans">用户名</span>点赞了你的帖子</div>
+                                </div>
+                                <div class="person_post">
+                                    <div class="post_title">2022.03.03 <span class="glyphicon glyphicon-trash"></span></div>
+                                    <div class="post_content"><span class="fans">用户名</span>点赞了你的帖子</div>
+                                </div>
+                            </div>
+                            <div class="differpage">
+                                <ul class="pagination">
+                                <li><a href="#">&laquo;</a></li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">&raquo;</a></li>    
+                                </ul>
+                         </div>
+                        </div>
+                    </div>
+                    
+                    
+    </div>
+</body>
+</html>

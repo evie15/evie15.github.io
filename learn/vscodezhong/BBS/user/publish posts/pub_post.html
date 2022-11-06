@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>publish</title>
+    <script src="../../js/tinymce/js/tinymce/tinymce.min.js"></script>
+    <script type="text/javascript" src="../../jqeury.js"></script>
+    <link href="../../bootstrap/bootstrap/bootstrap-3.4.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../../bootstrap/bootstrap/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="pub_post.js"></script>
+    <link rel="stylesheet" href="../show posts/navi.css">
+    <link rel="stylesheet" href="pub_post.css">
+</head>
+<body>
+    <div class="outer">
+        <div class="navi"> 
+        <ul>
+            <li><a href="../login&&home/login.html"><button id="chosed">BBS</button></a>  </li>
+            <li> </li>
+            <li></li>
+            <li></li>
+            <li><a href="../inform/inform.html"><button> <span class="glyphicon glyphicon-bell"></span><span class="font">消 息</span> </button></a>  </li>
+            <li><a href="../publish posts/pub_post.html"><button><span class="glyphicon glyphicon-edit"></span> <span class="font">创作中心</span>  </button></a>
+            </li>
+            <li>
+                    <div class="user_ph" onclick="Show()"><img src="../show posts/用户-圆 (1).png" alt="">
+                      <span class="login">登录/注册</span>
+                   </div>
+            </li>
+        </ul>
+        </div>
+    </div>
+    <div class="out2 container">
+        <div class="row">
+            <div class="col-xs-3">
+                <ul class="nav nav-tabs nav-stacked" id="myTab">
+                    <li class="active"><a href="#writing" id="first">草稿箱</a></li>
+                    <li><a href="#drafts" id="second">写文章</a></li>
+                </ul>
+            </div>
+        <div class="col-xs-9 tab-content" id="myTabContent">
+        <div id="writing">
+            <div class="panel panel-default">
+            <span class="panel-body">
+                <span class="logo">写文章</span>
+            </span>
+            </div>
+         <h2 contenteditable="true" class="post-title" style="color:gray; border-bottom: solid 1px #ccc; padding:5px 5px 10px 30px; float: inline-start; outline: none;">请输入标题</h2>
+         <div id="content">  
+            
+             <div class="post-content" style="color:gray; padding:5px 5px 10px 20px;">
+                 请输入正文
+             </div>
+        </div>
+        <div id="file"></div>
+        <div class="alert alert-warning alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert"
+                    aria-hidden="true">
+                &times;
+            </button>
+        发布成功！
+        </div>
+        <div class="setting"> 
+        <label for="name">发表至</label>
+		<select class="form-control">
+			<option selected>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select>
+        <button class="postMessage" onclick="draftspost()" style="margin-left:10px;">草稿箱</button>
+        <button class="postMessage" onclick="postMessege()">发 布</button>
+        </div>
+        </div>
+
+        <!-- 草稿箱 -->
+        <div id="drafts">
+            <div class="panel panel-default">
+            <span class="panel-body">
+                <span class="logo">草稿箱</span>
+            </span>
+            </div>
+
+            <div class="post_layer">
+                <div class="post" onclick="turnPage()">
+                    <div class="post_title" >帖子ming
+                    </div>
+                    
+                    <div class="post_content">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus quibusdam quam sunt officiis perferendis dicta qui soluta nisi sequi distinctio maiores sed nesciunt natus in error laudantium expedita, sint repellendus?
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis tempore fugiat sunt, non animi eligendi beatae officia assumenda velit amet in cumque dolor corrupti voluptates porro consequuntur aut explicabo? Illo.
+                    </div>
+                    <button class="postMessage" onclick="postMessege()">发 布</button>
+                </div>
+                <div class="post">
+                    <div class="post_title" onclick="turnPage()">帖子ming
+                        
+                    </div>
+                    <div class="post_content">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis tempore fugiat sunt, non animi eligendi beatae officia assumenda velit amet in cumque dolor corrupti voluptates porro consequuntur aut explicabo? Illo.
+                    </div>
+                    <button class="postMessage" onclick="postMessege()">发 布</button>
+                </div>
+                </div>
+         
+        </div>
+    </div>
+   
+</body>
+</html>

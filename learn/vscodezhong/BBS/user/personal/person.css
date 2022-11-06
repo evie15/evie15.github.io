@@ -1,0 +1,281 @@
+body{
+    display: flex;
+    padding-top: 70px;
+    font-family: 楷体;
+}
+ .person_navi{
+    height: 30px;
+    padding: 5px;
+    border-bottom: solid 5px rgba(46, 63, 223, 0.4);
+    border-radius: 10px;
+    margin-bottom: 20px;
+ }
+ #repage button{
+   border: none;
+   background-color: #fff;
+}
+#repage button::before{
+   content: '';
+   display:block;
+   background-image: url(../show\ posts/返回.png);
+   width: 23px;
+   height: 23px;
+   background-size: 100%;
+   margin: 5px;
+}
+ .person_content{
+   margin-left: 5%;
+   margin-right: 3%;
+    flex: 12;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+ }
+ #person_inform{
+    padding: 0%;
+    width: 100%;
+    display:flex ;
+ }
+ #image{
+    width: 120px;
+    height: 120px;
+    z-index: 9;
+ }
+ #image img{
+    width: 100%;
+    height: 100%;
+ }
+ .person_outer{
+   margin-top: 4%;
+   margin-left: 5%;
+ }
+ #person_name{
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+ }
+ #person_inform ul{
+   list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0%;
+    padding: 0%;
+    height: 50px;
+ }
+ #person_inform ul li{
+    margin-right: 15px;
+    font-size: 16px;
+ }
+ .total_title{
+    flex: 1;
+ }
+ .total_title ul{
+    display: flex;
+    list-style: none;height: 40px;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+ }
+ .total_title ul li{
+    flex:1;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+ }
+ .total_title ul li button{
+   border: none;
+   font-size: large;
+   font-weight: bold;
+   width: 100%;
+    height: 100%;
+    padding: 3%;
+    font-family: 楷体;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
+ }
+ .total_title ul li button:hover{
+   color: #fff;
+   font-style: italic ;
+   background-color: #708be4;
+   opacity: 0.8;
+ }
+ .chosed{
+   color: #fff;
+   font-style: italic ;
+   background-color: #6e88f1;
+   border-radius: 3px;
+ }
+ .person_detail{
+    flex: 1;
+ }
+ .person_post{
+   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+   border: 1px;
+    width: 37%;
+    transform: translateX(5%);
+    margin-top: 2%;
+    border-radius: 8px;
+    margin-right: 8%;
+    margin-left: 2%;
+    padding: 0px 15px 5px 15px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow:hidden;
+    line-height: 30px;
+ }
+ .person_post2{
+   display: flex;
+   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+   border: 1px;
+    width: 37%;
+    transform: translateX(5%);
+    margin-top: 2%;
+    border-radius: 8px;
+    margin-right: 8%;
+    margin-left: 2%;
+    padding: 20px 15px 20px 25px;
+ }
+ .post_title{
+    padding: 10px 0px 10px 10px;
+    margin-bottom: 5px;
+    border-bottom: solid 2px #708be4;
+ }
+ .post_layer{
+   display: flex;
+   flex-wrap: wrap;
+ }
+ #edit{
+   border: none;
+   margin: 10px;
+   background: none;
+   color: gray;
+   font-size: 14px;
+ }
+ #edit:hover{
+   color: black;
+ }
+ #container{
+   border-radius: 15px;
+    width: 30%;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    top: 18%;
+    display: none;
+    background-color: #fff;
+    font-family: 楷体;
+    z-index: 10;
+}
+.delete{
+   position: absolute;
+   top: -30px;
+   right: 10px;
+   font-size: 30px;
+   transform: rotate(45deg) translate(-2px, 2px);
+}
+.delete button{
+   border: none;
+   font-size: larger;
+   background: none;
+   position: relative;
+   top: 40px;
+   left: 20px;
+}
+#edit_ph{
+   width: 30%;
+}
+#edit_ph img{
+   width: 100%;
+   border-radius: 50%;
+}
+#second ul{
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   padding: 0%;
+   font-size: large;
+   z-index: 99;
+}
+#second ul li:nth-child(n+2){
+   margin: 20px 20px;
+}
+#second ul li:first-child{
+   margin: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+#second input{
+   border: none;
+   background-color: rgb(238, 238, 238);
+   width: 80%;
+   height : 40px;
+   outline: none;
+   font-size: large;
+   padding-left: 8px;
+   border-radius: 10px;
+   color: gray;
+}
+.saving{
+   width: 200px;
+   height: 40px;
+   position: relative;
+   left: 50%;
+   margin-left: -112px;
+   margin-top: -5%;
+   border-radius: 20px;
+   border: none;
+   background-color: rgb(77, 77, 255);
+   box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+   font-size: larger;
+   color: white;
+}
+ .scannumber{
+   background: url(../../眼睛.png) no-repeat;
+   background-size: cover;
+   background-position: right;
+   width: 20px;
+   height: 20px;
+   float: left;
+ }
+ .scan{
+   width: 20px;
+   height: 20px;
+   font-size: 10px;
+   color: gray;
+   text-align:end;
+   font-weight: 400;
+ }
+ .scanbox{
+   line-height: 20px;
+   float: right;
+ }
+ .col-md-1{
+   float: left;
+   width: 100px;
+ }
+ .col-md-11{
+   width: 75%;
+   margin-left: 5px;
+ }
+ .col-md-1 img{
+   width: 100%;
+}
+.friend{
+   font-size: 14px;
+}
+.cancel{
+   width: 70px;
+   float: right;
+   border: none;
+   height: 38px;
+   position: relative;
+   border-radius: 5px;
+   background-color: #6e88f1;
+   color: #fff;
+   bottom: 10px;
+}
