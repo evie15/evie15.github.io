@@ -1,0 +1,6 @@
+﻿<values>
+  <value name="vsttk" type="string">true</value>
+  <value name="vsformacaa" type="string">true</value>
+  <value name="VSTTKDebugCheckerExp" type="string">true</value>
+  <value name="TypeImportCompletion.NotUsed" type="string">false</value>
+</values>

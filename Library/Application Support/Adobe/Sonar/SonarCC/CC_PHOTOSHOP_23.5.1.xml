@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sonar time="11-28-2022 17:49:50" version="1.0" enabled="true">
+<product family="CC" name="PHOTOSHOP" version="23.5.1" build="20220907.r.724 5600b96" prerelease="false">
+<policy select="Undefined"/>
+<usage_time session_begin_time="11-28-2022 17:49:50" session_end_time="12-01-2022 10:07:55" session_usage_time="3858" total_time="3858"/>
+<launch first_time="11-28-2022 17:49:50" last_time="11-28-2022 17:49:50" count="1"/>
+<cancel last_time="" count="0"/>
+<submit last_time="" count="0"/>
+<crash time=""/>
+<dialog_crash count="0"/>
+</product>
+</sonar>
