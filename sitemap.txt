@@ -1,2 +1,2 @@
-https://evie15.github.io/2023/04/27/hello-world/
-https://evie15.github.io/
+http://example.com/2023/04/27/hello-world/
+http://example.com/
